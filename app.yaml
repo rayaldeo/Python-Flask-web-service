@@ -1,0 +1,11 @@
+runtime: python27
+threadsafe: true
+entrypoint: gunicorn -b :$PORT main:app
+
+handlers:
+- url: /.*
+  script: main.app
+
+libraries:
+- name: ssl
+  version: latest

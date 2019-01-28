@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <!--Tryit Editor v3.6. (2019). Retrieved from https://www.w3schools.com/css/tryit.asp?filename=trycss_forms -->
+    <style>
+        .button {
+          background-color: #4CAF50;
+          border: none;
+          color: white;
+          padding: 15px 25px;
+          text-align: center;
+          font-size: 16px;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        .button:hover {
+          background-color: green;
+        }
+
+        /* Add a background color and some padding around the form */
+        .container {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+          width: 40%;
+          height: 80%;
+          margin: auto;
+        }
+
+        input[type=text], select, textarea {
+        width: 100%; /* Full width */
+        padding: 12px; /* Some padding */  
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 4px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+
+        p{
+          text-align: center;
+          font-size: 30px;
+        }
+  </style>
+
+
+<title>This is my Webservice</title>
+</head>
+<body>
+
+
+<div class = "container">
+  <h2>Jonathan Elliott's Webservice</h2>
+  <p>Solution:</p>
+  <input type="text"  id = solution name="solution" value="{{ solution }}"><br>
+  <button type="button" onclick="goBack()" class=button>Try Again! </button>
+</div>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+  </script>
+
+</body>
+</html>
